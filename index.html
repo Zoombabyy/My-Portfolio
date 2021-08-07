@@ -9,14 +9,16 @@
   </head>
   <body>
     <header class="header">
-      <img
-        class="selfp"
-        src="./assets/IMG_3945.jpg"
-        alt="Picture of Travis Saucedo"
-      />
+      <div class="picture">
+        <img
+          class="selfp"
+          src="./assets/IMG_3945.jpg"
+          alt="Picture of Travis Saucedo"
+        />
+      </div>
       <h1>Travis Saucedo</h1>
       <hr color="black" width="100%" />
-      <!-- Below, for phone display -->
+      <!--! Below, for phone display -->
       <nav class="phonenb">
         <figure class="dropdown">
           <button onclick="myFunction()" class="db">Guide</button>
@@ -29,16 +31,74 @@
           </div>
         </figure>
       </nav>
-      <!-- Above, for phone display -->
+      <!--! Above, for phone display -->
       <nav class="navbar">
-        <a href="#" style="text-decoration: none">About Me</a
-        ><a href="#" style="text-decoration: none">My Projects</a
-        ><a href="https://github.com/Zoombabyy" style="text-decoration: none"
+        <a href="#About-Me" style="text-decoration: none">About Me</a
+        ><a href="#Work-History" style="text-decoration: none">Work History</a
+        ><a href="#My-Projects" style="text-decoration: none">My Projects</a>
+        <a href="https://github.com/Zoombabyy" style="text-decoration: none"
           >Github</a
-        ><a href="#" style="text-decoration: none">Linkedin</a
         ><a href="#" style="text-decoration: none">Contact Me</a>
       </nav>
     </header>
-    <section></section>
+    <main>
+      <section>
+        <div class="title">
+          <h2 class="align">About Me</h2>
+        </div>
+        <p class="info">
+          My name is Travis Saucedo, i'm 24 and I live in San Antonio, TX. I'm
+          just recently seperated from the military and gain tons of knowledge
+          from my time with them. I'm a hard worker and a fast learner who
+          thrives in high stress situations and loves to always keep my mind
+          active with learning new things as often as I can.
+        </p>
+      </section>
+      <section>
+        <div class="title">
+          <h2 class="align">Work History</h2>
+        </div>
+        <div>
+          <h3 class="info">United States Air Force</h3>
+          <p class="info">Customer Service and Data Entry Clerk.</p>
+          <p class="info">
+            My duty's for the Air Force included making CAC's for service
+            members and dependent ID's whenever one is needed, updating service
+            members files and records with any life updates including:
+            marriage/divorce, new child, name change and change of address.
+            Along with my duties there I also was in charge of all incoming
+            pre-bootcamp trainees, I had to help them get better prepaired for
+            their new life in the military.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="title">
+          <h2 class="align">My Projects</h2>
+        </div>
+        <figure class="flex">
+          <div class="box">
+            <img
+              src="./assets/Basic CSS Position and Flexbox - Google Chrome 8_6_2021 18_46_55.png"
+              alt="website picture"
+              class="bcss"
+            />
+            <a
+              class="desc"
+              href="https://github.com/Zoombabyy/Basic-CSS-Pos-and-FB"
+              >Basic CSS Position and Flexbox</a
+            >
+          </div>
+        </figure>
+        <figure class="flex">
+          <div class="box">
+            <img src="./assets/image.png" alt="website picture" class="bcss" />
+            <a class="desc" href="https://github.com/Zoombabyy/CSS-Cheatsheet"
+              >CSS Cheat Sheet</a
+            >
+          </div>
+        </figure>
+      </section>
+    </main>
   </body>
 </html>

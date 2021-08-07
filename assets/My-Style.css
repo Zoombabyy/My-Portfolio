@@ -1,3 +1,8 @@
+:root {
+  --darkgray: rgb(66, 66, 66);
+  --lightblue: #59b7e6;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -5,13 +10,13 @@
 }
 
 body {
-  background-color: rgb(161, 161, 161);
+  background-color: rgb(218, 218, 218);
 }
 
 .header {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  background-color: #59b7e6;
+  background-color: var(--lightblue);
   color: black;
   height: 100%;
   width: 300px;
@@ -20,13 +25,23 @@ body {
   left: 0;
   overflow-x: hidden;
   padding-top: 20px;
+  z-index: 1;
+}
+
+.picture {
+  height: 25%;
+  width: 80%;
+  /* position: relative; */
+  margin: 0 auto;
+  margin-top: -10px;
+  margin-bottom: 10px;
 }
 
 .selfp {
   border-radius: 50%;
-  width: 295px;
-  height: 287px;
-  position: relative;
+  width: 100%;
+  height: 100%;
+  /* position: absolute; */
   left: 2px;
   bottom: 15px;
   max-width: 295px;
@@ -58,9 +73,71 @@ body {
 }
 
 .navbar a:hover {
-  color: rgb(66, 66, 66);
+  color: var(--darkgray);
 }
 
 .navbar a:visited {
-  color: rgb(66, 66, 66);
+  color: var(--darkgray);
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  border: 2px solid black;
+  background-color: rgb(172, 172, 172);
+  width: 1750px;
+  position: relative;
+  left: 300px;
+  z-index: 0;
+}
+
+.info {
+  text-align: center;
+  font-size: 30px;
+  margin-left: 300px;
+  margin-right: 200px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.align {
+  position: relative;
+  right: 170px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  border: 2px dashed black;
+  height: 225px;
+  width: 500px;
+  height: 375px;
+  margin-left: 500px;
+  background-color: var(--lightblue);
+}
+
+.box:hover {
+  box-shadow: -10px -10px 50px #63cbff;
+}
+
+.bcss {
+  width: 350px;
+  height: 250px;
+  position: relative;
+  left: 75px;
+  top: 15px;
+}
+
+.desc {
+  margin-left: -200px;
+  text-align: left;
+  font-size: 25px;
+  position: relative;
+  top: 50px;
+  right: 65px;
+  display: inline;
 }
