@@ -4,118 +4,236 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./assets/My-Style.css" />
-    <title>Travis Saucedo's Portfolio</title>
+    <title>My Portfolio</title>
   </head>
-  <body>
-    <header class="header">
-      <div class="picture">
-        <img
-          class="selfp"
-          src="./assets/IMG_3945.jpg"
-          alt="Picture of Travis Saucedo"
-        />
-      </div>
-      <h1>Travis Saucedo</h1>
-      <hr color="black" width="100%" />
-      <!--! Below, for phone display -->
-      <nav class="phonenb">
-        <figure class="dropdown">
-          <button onclick="myFunction()" class="db">Guide</button>
-          <div id="dropdc" class="dropdown-content">
-            <a href="#">About Me</a>
-            <a href="#">My Projects</a>
-            <a href="https://github.com/Zoombabyy">Github</a>
-            <a href="#">Linkedin</a>
-            <a href="#">Contact Me</a>
-          </div>
-        </figure>
-      </nav>
-      <!--! Above, for phone display -->
-      <nav class="navbar">
-        <a href="#About-Me" style="text-decoration: none">About Me</a
-        ><a href="#Work-History" style="text-decoration: none">Work History</a
-        ><a href="#My-Projects" style="text-decoration: none">My Projects</a>
-        <a href="https://github.com/Zoombabyy" style="text-decoration: none"
-          >Github</a
-        ><a href="#Contact-Me" style="text-decoration: none">Contact Me</a>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <div class="title" id="About-Me">
-          <h2 class="align">About Me</h2>
-        </div>
-        <p class="info">
-          My name is Travis Saucedo, i'm 24 and I live in San Antonio, TX. I'm
-          just recently seperated from the military and gain tons of knowledge
-          from my time with them. I'm a hard worker and a fast learner who
-          thrives in high stress situations and loves to always keep my mind
-          active with learning new things as often as I can.
-        </p>
-      </section>
-      <section>
-        <div class="title" id="Work-History">
-          <h2 class="align">Work History</h2>
-        </div>
-        <div>
-          <h3 class="info">United States Air Force</h3>
-          <p class="info">Customer Service and Data Entry Clerk.</p>
-          <p class="info">
-            My duty's for the Air Force included making CAC's for service
-            members and dependent ID's whenever one is needed, updating service
-            members files and records with any life updates including:
-            marriage/divorce, new child, name change and change of address.
-            Along with my duties there I also was in charge of all incoming
-            pre-bootcamp trainees, I had to help them get better prepaired for
-            their new life in the military.
-          </p>
-        </div>
-      </section>
-      <section>
-        <div class="title" id="My-Projects">
-          <h2 class="align">My Projects</h2>
-        </div>
-        <figure class="flex">
-          <div class="box">
-            <img
-              src="./assets/Basic CSS Position and Flexbox - Google Chrome 8_6_2021 18_46_55.png"
-              alt="website picture"
-              class="bcss"
-            />
-            <a
-              class="desc"
-              href="https://github.com/Zoombabyy/Basic-CSS-Pos-and-FB"
-              >Basic CSS Position and Flexbox</a
-            >
-          </div>
-        </figure>
-        <figure class="flex">
-          <div class="box">
-            <img src="./assets/image.png" alt="website picture" class="bcss" />
-            <a class="desc" href="https://github.com/Zoombabyy/CSS-Cheatsheet"
-              >CSS Cheat Sheet</a
-            >
-          </div>
-        </figure>
-      </section>
-      <footer>
-        <div class="title" id="Contact-Me">
-          <h2 class="align">Contact Me</h2>
-        </div>
-        <div class="footer">
-          <ul>
-            <a
-              href="mailto: travissaucedo2514@gmail.com"
-              class="info"
-              style="text-decoration: none"
-            >
-              <li>Email Me!</li>
-            </a>
-            <li class="info">Call or Text Me!- (210)378-2371</li>
+  <header class="fw-bold text-white">
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-dark text-white"
+      id="home"
+    >
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link fs-2 text-white">
+                <img
+                  src="./assets/IMG_3945.jpg"
+                  alt=""
+                  width="150"
+                  height="100"
+                  class="d-inline-block align-text-top"
+                />
+                Travis Saucedo
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active fs-2 text-white"
+                aria-current="page"
+                href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-2 text-white" href="#about">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-2 text-white" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-2 text-white" href="#work">Work History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-2 text-white" href="#contact">Contact Me</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fs-2 text-white"
+                href="https://github.com/Zoombabyy"
+                >Github</a
+              >
+            </li>
           </ul>
         </div>
-      </footer>
-    </main>
+      </div>
+    </nav>
+  </header>
+  <body>
+    <section>
+      <div id="about">
+        <h2
+          class="border border-secondary text-center fw-bold fs-1 bg-secondary"
+        >
+          About Me
+        </h2>
+      </div>
+      <p class="text-center fs-4">
+        My name is Travis Saucedo, i'm 24 and I live in San Antonio, TX. I'm
+        just recently seperated from the military and gain tons of knowledge
+        from my time with them. I'm a hard worker and a fast learner who thrives
+        in high stress situations and loves to always keep my mind active with
+        learning new things as often as I can.
+      </p>
+    </section>
+    <section>
+      <div id="work">
+        <h2
+          class="border border-secondary text-center fw-bold fs-1 bg-secondary"
+        >
+          Work History
+        </h2>
+      </div>
+      <h3 class="text-left border border-secondary fs-1 fw-bold">
+        United States Air Force
+      </h3>
+      <p class="text-left fw-bold fs-4">
+        Customer Service and Data Entry Clerk.
+      </p>
+      <p class="text-center fs-4">
+        My duty's for the Air Force included making CAC's for service members
+        and dependent ID's whenever one is needed, updating service members
+        files and records with any life updates including: marriage/divorce, new
+        child, name change and change of address. Along with my duties there I
+        also was in charge of all incoming pre-bootcamp trainees, I had to help
+        them get better prepaired for their new life in the military.
+      </p>
+    </section>
+
+    <section>
+      <div id="projects">
+        <h2
+          class="border border-secondary text-center fw-bold fs-1 bg-secondary"
+        >
+          My Projects
+        </h2>
+      </div>
+      <section class="d-flex justify-content-evenly">
+        <div class="card" style="width: 18rem">
+          <img
+            src="./assets/Basic CSS Position and Flexbox - Google Chrome 8_6_2021 18_46_55.png"
+            class="card-img-top"
+            alt="Image of Website"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Basic CSS Position and Flexbox</h5>
+            <p class="card-text">
+              Click the button below to be redirected to the github repo!
+            </p>
+            <a
+              href="https://github.com/Zoombabyy/Basic-CSS-Pos-and-FB"
+              class="btn btn-primary"
+              >Github!</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="./assets/image.png"
+            class="card-img-top"
+            height="165px"
+            alt="Image of Website"
+          />
+          <div class="card-body">
+            <h5 class="card-title">CSS Cheatsheet</h5>
+            <p class="card-text">
+              Click the button below to be redirected to the github repo!
+            </p>
+            <a
+              href="https://github.com/Zoombabyy/CSS-Cheatsheet"
+              class="btn btn-primary"
+              >Github!</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="./assets/Password Generator - Google Chrome 9_22_2021 23_06_51.png"
+            class="card-img-top"
+            height="165px"
+            alt="Image of Website"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Password Generator</h5>
+            <p class="card-text">
+              Click the button below to be redirected to the github repo!
+            </p>
+            <a
+              href="https://github.com/Zoombabyy/Password-Generator"
+              class="btn btn-primary"
+              >Github!</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="./assets/Work-Day.png"
+            class="card-img-top"
+            height="165px"
+            alt="Image of Website"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Work Day Scheduler</h5>
+            <p class="card-text">
+              Click the button below to be redirected to the github repo!
+            </p>
+            <a
+              href="https://github.com/Zoombabyy/Work-Day-Scheduler"
+              class="btn btn-primary"
+              >Github!</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="./assets/Apex-Stat.png"
+            class="card-img-top"
+            height="165px"
+            alt="Image of Website"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Apex Stat Tracker</h5>
+            <p class="card-text">
+              Click the button below to be redirected to the github repo!
+            </p>
+            <a
+              href="https://github.com/Zoombabyy/Apex-Stat-Tracker"
+              class="btn btn-primary"
+              >Github!</a
+            >
+          </div>
+        </div>
+      </section>
+    </section>
   </body>
+  <footer>
+    <div id="contact">
+      <h2 class="border border-secondary text-center fw-bold fs-1 bg-secondary">
+        Contact Me!
+      </h2>
+    </div>
+    <div class="footer text-center fs-3">
+      <ul>
+        <a
+          href="mailto: travissaucedo2514@gmail.com"
+          class="info"
+          style="text-decoration: none"
+        >
+          <li>Email Me!</li>
+        </a>
+        <li class="info">Call or Text Me!- (210)378-2371</li>
+      </ul>
+    </div>
+  </footer>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"
+  ></script>
 </html>
