@@ -4,7 +4,9 @@
   "description": "Welcome to My Portfolio! Please follow the link below to go to My Portfolio and enjoy!\r https://zoombabyy.github.io/My-Portfolio/",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -15,9 +17,7 @@
   "bugs": {
     "url": "https://github.com/Zoombabyy/My-Portfolio/issues"
   },
-  "homepage": "https://github.com/Zoombabyy/My-Portfolio#readme",
   "dependencies": {
-    "gh-pages": "^3.2.3",
     "node": "^17.3.0",
     "particles-bg": "^2.5.5",
     "react": "^17.0.2",
