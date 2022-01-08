@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Zoombabyy/My-Portfolio#readme",
   "dependencies": {
+    "gh-pages": "^3.2.3",
     "node": "^17.3.0",
     "particles-bg": "^2.5.5",
     "react": "^17.0.2",
